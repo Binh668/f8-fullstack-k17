@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập tạo form 1</title>
+  </head>
+  <body>
+    <form action="taikhoan.htm " style="width: 30%; background: lightgray">
+      <!-- fieldset 1 -->
+      <fieldset>
+        <legend>Thông Tin Tài Khoản</legend>
+        <label for="">Họ và Tên</label>
+        <input type="text" name="hoVaTen" id="hoVaTen" />
+        <br /><br />
+        <label>Hòm Thư</label>
+        <input type="text" name="email" id="email" />
+        <br /><br />
+        <label>Mật Khẩu</label>
+        <input type="text" name="matKhau" id="matKhau" />
+        <br /><br />
+        <label>Xác nhận Mật Khẩu</label>
+        <input type="text" name="xacNhanMatKhau" id="xacNhanMatKhau" />
+      </fieldset>
+      <br />
+      <!-- fieldset 2 -->
+      <fieldset>
+        <legend>Thông Tin Cá Nhân</legend>
+        <label>Giới Tính:</label>
+        <input type="radio" name="gioiTinh" /><span>Nam</span>
+        <input type="radio" name="gioiTinh" /><span>Nữ</span>
+        <input type="radio" name="gioiTinh" /><span>Khác</span>
+        <!--single option: đơn lựa chọn-->
+        <br /><br />
+        <label>Sở Thích:</label>
+        <input type="checkbox" name="soThich" /><span>Thể Thao</span>
+        <input type="checkbox" name="soThich" /><span>Âm Nhạc</span>
+        <input type="checkbox" name="soThich" /><span>Du Lịch</span>
+        <!--single option: đơn lựa chọn-->
+        <br /><br />
+        <label>Ngày Sinh:</label>
+        <input type="date" name="ngaySinh" id="ngaySinh" />
+        <br /><br />
+        <label for="">Quốc Gia:</label>
+        <select name="quocGia" id="quocGia">
+          <option value="vn">Việt Nam</option>
+          <option value="us">Mỹ</option>
+          <option value="uk">Anh</option>
+          <option value="fr">Pháp</option>
+          <option value="jp">Nhật Bản</option>
+        </select>
+        <br /><br />
+        <label>Điện Thoại:</label>
+        <input type="number" name="dienThoai" id="dienThoai" />
+        <br /><br />
+        <label>Địa chỉ liên hệ:</label><br />
+        <textarea name="diaChi" id="diaChi" cols="40" rows="5"></textarea>
+        <br /><br />
+        <div style="text-align: center">
+          <button>Gửi</button>
+          <button>Hủy</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
