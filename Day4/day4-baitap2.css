@@ -1,0 +1,43 @@
+/* Đổi sang thẻ khối, nổi bênh trái */
+fieldset {
+    position: relative;
+    background-color: lightgray;
+    padding: 15px 15px 15px 15px;
+    margin: 30px 30px 30px 30px;
+}
+
+legend {
+    position: absolute;
+    top: -16px;
+    left: 10px;
+    font-weight: bold;
+   
+}
+
+label,input, span, textarea, meter, progress, select {
+    display: block;
+    float: left;
+    margin-bottom: 6px;
+}
+/* Canh lề cho thẻ label */
+label{
+    clear: left;
+    width: 160px;
+    text-align: right;
+    margin-right: 10px;
+    
+}
+input[type="range"]{
+  accent-color: red;   
+  height: 6px;            
+}
+progress {
+  accent-color: red;   
+            
+}
+.button {
+    margin-left: 170px;
+    margin-top: 100px;
+    
+}
+
