@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: white;
+        font-size: 35px;
+        font-style: italic;
+        text-indent: 15px; /* Thụt lề dòng đầu */
+        width: 800px;
+        height: 200px;
+        display: table-cell; /* Giúp căn giữa theo chiều dọc */
+        vertical-align: middle; /* Giúp căn giữa theo chiều dọc */
+        margin-top: 200px; /* Căn giữa theo chiều ngang */
+        transform: rotate(15deg); /* Xoay 15 độ */
+
+        /* đường viền */
+        border: solid 1px gray;
+        border-radius: 10px; /* Bo góc */
+
+        /* Hiệu ứng bóng râm */
+        box-shadow: 10px 20px 10px lightblue; /* Tạo bóng cho khung */
+        background-color: darkcyan;
+
+        text-align: center; /* Căn giữa theo chiều ngang */
+
+        /* di chuyển khung sang phải */
+        position: relative;
+        top: 90px;
+        left: 400px;
+      }
+      .name {
+        display: block;
+        text-align: right;
+        margin-top: 6px;
+        margin-right: 120px; /* Căn tên về bên phải của chữ Xuân Diệu */
+      }
+    </style>
+  </head>
+  <body>
+    <div style="display: table">
+      <p>
+        "Thà một phút huy hoàng rồi vụt tắt. <br />
+        Còn hơn buồn le lói suốt trăm năm."<br />
+        <span class="name">-Xuân Diệu-</span>
+      </p>
+    </div>
+  </body>
+</html>

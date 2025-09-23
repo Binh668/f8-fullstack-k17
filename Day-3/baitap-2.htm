@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập buổi 3</title>
+    <style>
+      /* Bỏ biểu tượng và thục vào 60px */
+      .smile-list {
+        list-style: none;
+        padding-left: 60px;
+      }
+      .smile-list li {
+        position: relative; /* Đặt vị trí tương đối cho <li>, để phần tử con (icon mặt cười với position: absolute;) định vị chính xác dựa trên <li>.*/
+        padding-left: 28px; /*Tạo khoảng trống bên trái 28px để nội dung không bị đè lên icon mặt cười.*/
+        min-height: 20px; /*Đảm bảo mỗi dòng danh sách có chiều cao tối thiểu 24px, giúp icon và chữ không bị chồng lên nhau.*/
+      }
+      .smile-list li::before {
+        /* Áp dụng cho tất cả các thẻ <li> nằm trong .smile-list, sử dụng pseudo-element ::before để chèn nội dung trước mỗi mục.*/
+        content: ""; /* tạo phần tử ảo*/
+        display: inline-block; /* Cho phép phần tử ảo này có chiều rộng, chiều cao như một khối nhỏ.*/
+        width: 20px;
+        height: 20px;
+        background-image: url("https://em-content.zobj.net/source/microsoft-teams/363/smiling-face_263a-fe0f.png");
+        background-size: cover;
+        position: absolute; /* Định vị icon tuyệt đối so với phần tử cha có vị trí tương đối.*/
+        left: 0;
+        top: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Biểu tượng vòng tròn -->
+    <ul style="list-style-type: circle">
+      <li>Mục 1</li>
+      <li>Mục 2</li>
+      <li>Mục 3</li>
+    </ul>
+    <!-- Biểu tượng hình vuông đen -->
+    <ul style="list-style-type: square">
+      <li>Mục 4</li>
+      <li>Mục 5</li>
+      <li>Mục 6</li>
+    </ul>
+    <!-- Biểu tượng hình mặt cười -->
+    <ul class="smile-list">
+      <li>Mục 7</li>
+      <li>Mục 8</li>
+      <li>Mục 9</li>
+    </ul>
+  </body>
+</html>
